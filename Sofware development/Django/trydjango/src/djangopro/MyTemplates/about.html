@@ -1,0 +1,27 @@
+{%extends 'Main.html'%}
+{% block about_replace %}
+<h1>{{Head|capfirst}}</h1>
+<h1>{{Head|lower}}</h1>
+<h1>{{Head|upper}}</h1>
+<h1>{{Head|title}}</h1>
+{{my_html|striptags}}
+{{my_html|safe}}
+{{my_html|slugify}}
+<p>This was inherited by the about template</p>
+{% endblock %}
+
+{%block context_block%}
+<p>
+    My name is {{ Name }} and i am {{ Age }} Years old,These are my datas</p>
+<ul>
+{%for data in Datas%}
+    {%if data == "ss3"%}
+        <li>I am in {{data}}</li>
+    {%elif data == "python"%}
+        <li>I code in {{data}}</li>
+    {%elif data == "Love GOD"%}
+        <li>I {{data}}</li>
+    {%endif%}
+{%endfor%}
+</ul>
+{%endblock%}

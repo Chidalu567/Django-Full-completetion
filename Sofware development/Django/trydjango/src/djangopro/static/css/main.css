@@ -1,0 +1,28 @@
+/*body div{
+    background-color:red;
+    background-image:url(../images/Gift.png);
+    background-attachment:fixed;
+    object-fit:cover;
+    overflow:hidden;
+height:50vh;
+width:100vw;
+
+
+}*/
+
+button{
+color:blue;
+border-radius:20px;
+outline:none;
+background:none;
+padding:20px 50px;
+border:1px solid red;
+transition:0.4s all ease-in-out;
+font-size:30;
+}
+button:hover{
+background:red;
+color:blue;
+}
+
+

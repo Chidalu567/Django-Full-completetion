@@ -1,0 +1,9 @@
+{%extends 'Main.html'%}
+
+{%block context_block%}
+<p>{{object_list}}</p>
+{%for object in object_list%}
+    {{object.id}}-<a href="{{object.get_absolute_urls}}">{{object.title}}</a><br>
+
+{%endfor%}
+{%endblock%}

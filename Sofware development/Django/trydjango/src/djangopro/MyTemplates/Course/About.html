@@ -1,0 +1,14 @@
+{%extends 'Main.html'%}
+
+{%block context_block%}
+<ul>
+{%for instance in object%}
+    <li>{{instance.Title}}</li>
+        <ul>
+            <li>{{instance.Content}}</li>
+            <li>{{instance.Date}}</li>
+            <li>We have {{instance.View}} Views</li>
+        </ul>
+{%endfor%}
+</ul>
+{%endblock%}

@@ -1,0 +1,8 @@
+{%extends 'Main.html'%}
+
+{%block context_block%}
+<form method="POST">
+    {{form.as_p}}{%csrf_token%}
+    <input type="submit" value="Save"/>
+</form>
+{%endblock%}
